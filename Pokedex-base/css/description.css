@@ -1,0 +1,16 @@
+.description {
+  background-color: var(--bg-description);
+  block-size: 7rem;
+  border: 2px solid var(--black);
+  border-radius: .5rem;
+  color: var(--black);
+  font-family: monospace;
+  grid-area: description;
+  overflow: auto;
+  padding: .5rem;
+}
+
+.description p {
+  margin: 0;
+}
+

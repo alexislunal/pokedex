@@ -1,0 +1,23 @@
+.screen {
+
+}
+
+.screen-border {
+  background-color: var(--white);
+  border-radius: .5rem;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 2rem 100%, 0 calc(100% - 2.75rem));
+  padding: 1.5rem;
+  padding-block-end: 2.75rem;
+}
+
+.screen-safeArea {
+  align-items: center;
+  background-color: var(--screen-sky);
+  background-position: center;
+  background-size: cover;
+  block-size: 10rem;
+  border-radius: .25rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}

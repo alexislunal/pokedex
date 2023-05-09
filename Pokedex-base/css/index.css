@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url(./pokedex.css);
+@import url(./cover.css);
+@import url(./header.css);
+@import url(./light.css);
+@import url(./stats.css);
+@import url(./screen.css);
+@import url(./actions.css);
+@import url(./variants.css);
+@import url(./search.css);
+@import url(./description.css);
+@import url(./navigation.css);
+
+:root {
+  --white: #fffffe;
+  --black: #300f16;
+  --green: #51AE5F;
+  --blue: #8DB9DC;
+  --yellow: #FECB2F;
+  --primary: #dc0a2d;
+  --secondary: #163355;
+  --primary-header: #C70424;
+  --header-sky: #4BA3DA;
+  --header-red: #F4647D;
+  --header-yellow: #FEEF8D;
+  --header-green: #5BAA67;
+  --border-red: #BA1120;
+  --screen-sky: #8DB9DC;
+  --bg-description: #51AE5F;
+  --body1: 400 0.75rem/1.5rem Roboto;
+  --body3: 400 0.5rem/0.4556451737880707rem Roboto;
+  --body2-regular: 400 0.75rem/1.375rem 'Space Mono';
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--bg-description);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--bg-description);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  border-radius: 5px;
+  border: 0.5px solid white;
+}
+
+body {
+  align-items: center;
+  background-color: var(--secondary);
+  color: var(--white);
+  display: flex;
+  font: var(--body1);
+  justify-content: center;
+  margin: 0;
+  min-block-size: 100vh;
+  overflow: hidden;
+  padding: 1rem;
+}
+

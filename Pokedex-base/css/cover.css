@@ -1,0 +1,38 @@
+.cover {
+
+}
+
+.cover-front {
+  background-color: var(--primary);
+  backface-visibility: hidden;
+  block-size: inherit;
+  border-end-start-radius: .5rem;
+  border-inline-end: .25rem solid var(--border-red);
+  clip-path: polygon(0 4.75rem, 70% 3.25rem, 100% 3.25rem, 100% 100%, 0 100%);
+  inline-size: inherit;
+  inset: 0;
+  position: absolute;
+  z-index: 2;
+  transition: 1s transform;
+  transform-origin: right center;
+}
+
+.cover-back {
+  background-color: var(--primary);
+  backface-visibility: hidden;
+  block-size: inherit;
+  border-end-end-radius: .5rem;
+  border-inline-start: .25rem solid var(--border-red);
+  clip-path: polygon(0 3.25rem, 30% 3.25rem, 100% 4.75rem, 100% 100%, 0 100%);
+  display: flex;
+  inline-size: inherit;
+  inset: 0;
+  inset-inline-start: 100%;
+  padding: 1.5rem;
+  padding-block-start: 6.25rem;
+  position: absolute;
+  transform: rotateY(-180deg);
+  transform-origin: left center;
+  transition: 1s transform;
+  z-index: 1;
+}

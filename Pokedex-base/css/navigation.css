@@ -1,0 +1,75 @@
+.navigation {
+  --buttonSize: 1.5rem;
+  grid-area: navigation;
+  display: grid;
+  filter: drop-shadow(2px 2px 0 var(--black));
+  grid-template-columns: repeat(3, var(--buttonSize));
+  grid-template-rows: repeat(3, var(--buttonSize));
+  grid-template-areas: '. up .' 'left center right' '. down .';
+  place-content: center;
+}
+
+.navigation > *, .navigation::after {
+  background-color: var(--secondary);
+  border: none;
+  block-size: var(--buttonSize);
+  cursor: pointer;
+  inline-size: var(--buttonSize);
+  position: relative;
+}
+
+.navigation > *:active {
+  transform: scale(.9);
+}
+
+.navigation::after {
+  content: '';
+  grid-area: center;
+}
+
+.navigation-left {
+  grid-area: left;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-right {
+  grid-area: right;
+}
+
+.navigation-up {
+  grid-area: up;
+}
+
+.navigation-down {
+  grid-area: down;
+}
+
+.navigation > *:after {
+  border: .25rem solid transparent;
+  content: '';
+  inset-inline-start: 50%;
+  inset-inline-end: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.navigation-left:after {
+  border-inline-start: none;
+  border-inline-end-color: var(--white);
+}
+
+.navigation-right:after {
+  border-inline-end: none;
+  border-inline-start-color: var(--white);
+}
+
+.navigation-up:after {
+  border-block-start: none;
+  border-block-end-color: var(--white);
+}
+
+.navigation-down:after {
+  border-block-end: none;
+  border-block-start-color: var(--white);
+}
